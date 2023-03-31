@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>digay_adrian_regine</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="backdrop"></div>
+    <a href="../index.html">
+      <div class="back">
+        <svg
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          fill="#fff"
+        >
+          <path
+            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+          />
+        </svg>
+      </div>
+    </a>
+    <div class="reset">
+      <h3>Reset</h3>
+    </div>
+    <div class="rules">
+      <img src="../assets/rules.png" alt="" />
+    </div>
+    <div class="rules_btn">
+      <h3>Rules</h3>
+    </div>
+
+    <div>
+      <div>
+        <div class="title">
+          <h3>Rock Paper Scissor Spock Gun Game</h3>
+        </div>
+        <div class="main_game_board">
+          <div class="game_progress">
+            <div class="best_of">
+              <h4>BEST OF :</h4>
+              <h4 class="best_of_num">10</h4>
+            </div>
+            <div class="scoreboard">
+              <div class="your">
+                <p>You:</p>
+                <div id="your_score">0</div>
+              </div>
+              <div class="computer">
+                <p>Computer:</p>
+                <div id="computer_score">0</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table_parent">
+            <section class="table">
+              <div class="polygon">
+                <img
+                  src="./assets/polygon.png"
+                  alt="polygon"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+
+              <!-- rock -->
+              <div class="rock option" name="rock">
+                <img
+                  src="./assets/rock.svg"
+                  alt="rock"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <!-- paper -->
+              <div class="scissor option" name="scissor">
+                <img
+                  src="./assets/scissor.svg"
+                  alt="rock"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <!-- scissor -->
+              <div class="paper option" name="paper">
+                <img
+                  src="./assets/paper.svg"
+                  alt="rock"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <!-- spock -->
+
+              <!-- lizard -->
+              <div class="gun option" name="gun">
+                <img
+                  src="./assets/gun.svg"
+                  alt="rock"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <!-- Gun -->
+              <div class="spock option" name="spock">
+                <img
+                  src="./assets/spock.svg"
+                  alt="rock"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </section>
+            <section class="results" style="color: black">
+              <div class="result">
+                <div class="player_result">
+                  <div class="picked player_choice_container">
+                    <img
+                      src="./assets/rock.svg"
+                      alt="polygon"
+                      width="100%"
+                      height="100%"
+                      class="player_choice"
+                    />
+                  </div>
+                  <br />
+                  <h3>You</h3>
+                </div>
+                <div class="action">
+                  <div class="text_result">YOU WIN!!</div>
+                </div>
+                <div class="computer_result">
+                  <div class="picked computer_choice_container">
+                    <img
+                      src="./assets/rock.svg"
+                      alt="polygon"
+                      width="100%"
+                      height="100%"
+                      class="computer_choice"
+                    />
+                  </div>
+                  <br />
+                  <h3>Computer</h3>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="game_over">
+          <div class="game_over_wrapper">
+            <div class="game_over_content">
+              <div>
+                <h1 class="game_over_result_text">YOU WIN THIS GAME</h1>
+              </div>
+            </div>
+            <div class="game_over_bg">
+              <img
+                src="./assets/gameoverwin.png"
+                alt=""
+                class="game_over_result_bg"
+                width="100%"
+                height="auto"
+              />
+            </div>
+
+            <button class="play_again_btn">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <span style="font-weight: bold">Code Source</span>
+      <a href="https://jonathan.github.com/rock_paper_gun_game"
+        >https://jonathan.github.com/rock_paper_gun_game
+      </a>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

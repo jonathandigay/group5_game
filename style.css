@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: firstFont;
+  src: url("../Inter/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: secondFont;
+  src: url("../Inter/Inter-Thin.ttf");
+}
+ul {
+  list-style: none;
+}
+body {
+  background: black;
+  background-image: url("./assets/bglong.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  color: white;
+  font-family: secondFont;
+  overflow: hidden;
+}
+.main {
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto auto;
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  padding: 20px;
+  border-radius: 3px;
+  background: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  animation: show ease-in 500ms 1;
+}
+.container h3,
+label {
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+  border: 2px solid rgba(255, 215, 0, 0.5);
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  background: none;
+  margin-right: auto;
+  position: relative;
+  left: 83%;
+
+  cursor: pointer;
+
+  outline: none;
+  border-radius: 100%;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+}
+button > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  /* background: rgb(246, 189, 19); */
+  transition: all ease-in 200ms;
+}
+button svg {
+  margin-left: 2px;
+}
+button:hover > div {
+  transform: translateX(20px);
+  transition: transform ease-in 300ms;
+  filter: brightness(30px);
+}
+h4 {
+  margin: 10px 0;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+ul li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 3px solid rgb(246, 189, 19);
+  margin-bottom: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0) translateY(-50%);
+  }
+  100% {
+    transform: scale(100%) translateY(-50%);
+  }
+}
